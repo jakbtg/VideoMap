@@ -1,0 +1,815 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9C11236D2471959F00B49DDC /* SearchVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C11236C2471959F00B49DDC /* SearchVideo.swift */; };
+		9C11236F2471963300B49DDC /* SearchVideoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C11236E2471963300B49DDC /* SearchVideoTests.swift */; };
+		9C1304F7246AE5EE00017FF9 /* SortVideos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1304F6246AE5EE00017FF9 /* SortVideos.swift */; };
+		9C1304F9246AE91B00017FF9 /* SortVideosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1304F8246AE91B00017FF9 /* SortVideosTests.swift */; };
+		9C1304FB246AEDA600017FF9 /* Palm Beach.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9C1304FA246AEDA600017FF9 /* Palm Beach.mp4 */; };
+		9C189E1C24754278003BE528 /* VideoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C189E1B24754278003BE528 /* VideoTests.swift */; };
+		9C189E1E2475487F003BE528 /* AnnotationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C189E1D2475487F003BE528 /* AnnotationTests.swift */; };
+		9C18AE442465C09F006F1F3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C18AE432465C09F006F1F3A /* AppDelegate.swift */; };
+		9C18AE462465C09F006F1F3A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C18AE452465C09F006F1F3A /* SceneDelegate.swift */; };
+		9C18AE482465C09F006F1F3A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C18AE472465C09F006F1F3A /* ViewController.swift */; };
+		9C18AE4B2465C09F006F1F3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C18AE492465C09F006F1F3A /* Main.storyboard */; };
+		9C18AE4D2465C0A0006F1F3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C18AE4C2465C0A0006F1F3A /* Assets.xcassets */; };
+		9C18AE502465C0A0006F1F3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C18AE4E2465C0A0006F1F3A /* LaunchScreen.storyboard */; };
+		9C18AE662465C0A0006F1F3A /* VideoMapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C18AE652465C0A0006F1F3A /* VideoMapUITests.swift */; };
+		9C18AE742465C0CE006F1F3A /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C18AE732465C0CE006F1F3A /* Video.swift */; };
+		9C18AE762465C97E006F1F3A /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C18AE752465C97E006F1F3A /* TableViewController.swift */; };
+		9C18AE7C2465DA0C006F1F3A /* TableViewCellDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C18AE7B2465DA0C006F1F3A /* TableViewCellDesign.swift */; };
+		9C39A3C82472AB8800403DF1 /* ShakeTextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C39A3C72472AB8800403DF1 /* ShakeTextFieldExtension.swift */; };
+		9C39A3CA2472ABB200403DF1 /* BlurMapViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C39A3C92472ABB200403DF1 /* BlurMapViewExtension.swift */; };
+		9C39A3CC2472B59900403DF1 /* BlurTableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C39A3CB2472B59900403DF1 /* BlurTableViewExtension.swift */; };
+		9C941275247B28FA00618037 /* AVPlayerViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C941274247B28FA00618037 /* AVPlayerViewControllerExtension.swift */; };
+		9C9BE4E62469B529004953AD /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C9BE4E52469B529004953AD /* MapKit.framework */; };
+		9C9BE4E82469BCA9004953AD /* AppUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9BE4E72469BCA9004953AD /* AppUtility.swift */; };
+		9CE864AD2470203200BD2A48 /* Annotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE864AC2470203200BD2A48 /* Annotation.swift */; };
+		9CE864AF24702AB300BD2A48 /* AnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE864AE24702AB300BD2A48 /* AnnotationView.swift */; };
+		9CEE614224741E1B00C78E40 /* SearchingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CEE614124741E1B00C78E40 /* SearchingError.swift */; };
+		9CF91DA2246867E8008D9A71 /* Rainbow Mountains.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9CF91D8B246867E7008D9A71 /* Rainbow Mountains.mp4 */; };
+		9CF91DA3246867E8008D9A71 /* Sestriere.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9CF91D8C246867E7008D9A71 /* Sestriere.mp4 */; };
+		9CF91DA4246867E8008D9A71 /* Croazia.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9CF91D8D246867E7008D9A71 /* Croazia.mp4 */; };
+		9CF91DA5246867E8008D9A71 /* PowDay.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9CF91D8E246867E7008D9A71 /* PowDay.mp4 */; };
+		9CF91DA6246867E8008D9A71 /* Prematuri.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9CF91D8F246867E7008D9A71 /* Prematuri.mp4 */; };
+		9CF91DA7246867E8008D9A71 /* Abetone.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9CF91D90246867E7008D9A71 /* Abetone.mp4 */; };
+		9CF91DA8246867E8008D9A71 /* San Martino.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9CF91D91246867E7008D9A71 /* San Martino.mp4 */; };
+		9CF91DA9246867E8008D9A71 /* Kos.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9CF91D92246867E7008D9A71 /* Kos.mp4 */; };
+		9CF91DAA246867E8008D9A71 /* TOURscany.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9CF91D93246867E7008D9A71 /* TOURscany.mp4 */; };
+		9CF91DAB246867E8008D9A71 /* Venezia.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9CF91D94246867E8008D9A71 /* Venezia.mp4 */; };
+		9CF91DAC246867E8008D9A71 /* Water Flow.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9CF91D95246867E8008D9A71 /* Water Flow.mp4 */; };
+		9CF91DAD246867E8008D9A71 /* Livigno.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9CF91D96246867E8008D9A71 /* Livigno.mp4 */; };
+		9CF91DAE246867E8008D9A71 /* Tenerife.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9CF91D97246867E8008D9A71 /* Tenerife.mp4 */; };
+		9CF91DAF246867E8008D9A71 /* Le Hammelle.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9CF91D98246867E8008D9A71 /* Le Hammelle.mp4 */; };
+		9CF91DB0246867E8008D9A71 /* Sorshossegor.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9CF91D99246867E8008D9A71 /* Sorshossegor.mp4 */; };
+		9CF91DB1246867E8008D9A71 /* Stubai.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9CF91D9A246867E8008D9A71 /* Stubai.mp4 */; };
+		9CF91DB2246867E8008D9A71 /* Dreaming in London.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9CF91D9B246867E8008D9A71 /* Dreaming in London.mp4 */; };
+		9CF91DB3246867E8008D9A71 /* Longboard.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9CF91D9C246867E8008D9A71 /* Longboard.mp4 */; };
+		9CF91DB4246867E8008D9A71 /* Ios.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9CF91D9D246867E8008D9A71 /* Ios.mp4 */; };
+		9CF91DB5246867E8008D9A71 /* La Thuile.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9CF91D9E246867E8008D9A71 /* La Thuile.mp4 */; };
+		9CF91DB6246867E8008D9A71 /* Portugal.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9CF91D9F246867E8008D9A71 /* Portugal.mp4 */; };
+		9CF91DB7246867E8008D9A71 /* Giro dell'Elba in canoa.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9CF91DA0246867E8008D9A71 /* Giro dell'Elba in canoa.mp4 */; };
+		9CF91DB8246867E8008D9A71 /* Fixed in Florence.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9CF91DA1246867E8008D9A71 /* Fixed in Florence.mp4 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9C18AE572465C0A0006F1F3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9C18AE382465C09E006F1F3A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9C18AE3F2465C09E006F1F3A;
+			remoteInfo = VideoMap;
+		};
+		9C18AE622465C0A0006F1F3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9C18AE382465C09E006F1F3A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9C18AE3F2465C09E006F1F3A;
+			remoteInfo = VideoMap;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9C11236C2471959F00B49DDC /* SearchVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVideo.swift; sourceTree = "<group>"; };
+		9C11236E2471963300B49DDC /* SearchVideoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVideoTests.swift; sourceTree = "<group>"; };
+		9C1304F6246AE5EE00017FF9 /* SortVideos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortVideos.swift; sourceTree = "<group>"; };
+		9C1304F8246AE91B00017FF9 /* SortVideosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortVideosTests.swift; sourceTree = "<group>"; };
+		9C1304FA246AEDA600017FF9 /* Palm Beach.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Palm Beach.mp4"; sourceTree = "<group>"; };
+		9C189E1B24754278003BE528 /* VideoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTests.swift; sourceTree = "<group>"; };
+		9C189E1D2475487F003BE528 /* AnnotationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotationTests.swift; sourceTree = "<group>"; };
+		9C18AE402465C09F006F1F3A /* VideoMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C18AE432465C09F006F1F3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9C18AE452465C09F006F1F3A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		9C18AE472465C09F006F1F3A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9C18AE4A2465C09F006F1F3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9C18AE4C2465C0A0006F1F3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9C18AE4F2465C0A0006F1F3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9C18AE512465C0A0006F1F3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C18AE562465C0A0006F1F3A /* VideoMapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VideoMapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C18AE5C2465C0A0006F1F3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C18AE612465C0A0006F1F3A /* VideoMapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VideoMapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C18AE652465C0A0006F1F3A /* VideoMapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoMapUITests.swift; sourceTree = "<group>"; };
+		9C18AE672465C0A0006F1F3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C18AE732465C0CE006F1F3A /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		9C18AE752465C97E006F1F3A /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		9C18AE7B2465DA0C006F1F3A /* TableViewCellDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellDesign.swift; sourceTree = "<group>"; };
+		9C39A3C72472AB8800403DF1 /* ShakeTextFieldExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeTextFieldExtension.swift; sourceTree = "<group>"; };
+		9C39A3C92472ABB200403DF1 /* BlurMapViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurMapViewExtension.swift; sourceTree = "<group>"; };
+		9C39A3CB2472B59900403DF1 /* BlurTableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurTableViewExtension.swift; sourceTree = "<group>"; };
+		9C941274247B28FA00618037 /* AVPlayerViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVPlayerViewControllerExtension.swift; sourceTree = "<group>"; };
+		9C9BE4E52469B529004953AD /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		9C9BE4E72469BCA9004953AD /* AppUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUtility.swift; sourceTree = "<group>"; };
+		9CE864AC2470203200BD2A48 /* Annotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Annotation.swift; sourceTree = "<group>"; };
+		9CE864AE24702AB300BD2A48 /* AnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotationView.swift; sourceTree = "<group>"; };
+		9CEE614124741E1B00C78E40 /* SearchingError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchingError.swift; sourceTree = "<group>"; };
+		9CF91D8B246867E7008D9A71 /* Rainbow Mountains.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rainbow Mountains.mp4"; sourceTree = "<group>"; };
+		9CF91D8C246867E7008D9A71 /* Sestriere.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Sestriere.mp4; sourceTree = "<group>"; };
+		9CF91D8D246867E7008D9A71 /* Croazia.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Croazia.mp4; sourceTree = "<group>"; };
+		9CF91D8E246867E7008D9A71 /* PowDay.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = PowDay.mp4; sourceTree = "<group>"; };
+		9CF91D8F246867E7008D9A71 /* Prematuri.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Prematuri.mp4; sourceTree = "<group>"; };
+		9CF91D90246867E7008D9A71 /* Abetone.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Abetone.mp4; sourceTree = "<group>"; };
+		9CF91D91246867E7008D9A71 /* San Martino.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "San Martino.mp4"; sourceTree = "<group>"; };
+		9CF91D92246867E7008D9A71 /* Kos.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Kos.mp4; sourceTree = "<group>"; };
+		9CF91D93246867E7008D9A71 /* TOURscany.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = TOURscany.mp4; sourceTree = "<group>"; };
+		9CF91D94246867E8008D9A71 /* Venezia.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Venezia.mp4; sourceTree = "<group>"; };
+		9CF91D95246867E8008D9A71 /* Water Flow.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Water Flow.mp4"; sourceTree = "<group>"; };
+		9CF91D96246867E8008D9A71 /* Livigno.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Livigno.mp4; sourceTree = "<group>"; };
+		9CF91D97246867E8008D9A71 /* Tenerife.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Tenerife.mp4; sourceTree = "<group>"; };
+		9CF91D98246867E8008D9A71 /* Le Hammelle.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Le Hammelle.mp4"; sourceTree = "<group>"; };
+		9CF91D99246867E8008D9A71 /* Sorshossegor.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Sorshossegor.mp4; sourceTree = "<group>"; };
+		9CF91D9A246867E8008D9A71 /* Stubai.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Stubai.mp4; sourceTree = "<group>"; };
+		9CF91D9B246867E8008D9A71 /* Dreaming in London.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Dreaming in London.mp4"; sourceTree = "<group>"; };
+		9CF91D9C246867E8008D9A71 /* Longboard.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Longboard.mp4; sourceTree = "<group>"; };
+		9CF91D9D246867E8008D9A71 /* Ios.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Ios.mp4; sourceTree = "<group>"; };
+		9CF91D9E246867E8008D9A71 /* La Thuile.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "La Thuile.mp4"; sourceTree = "<group>"; };
+		9CF91D9F246867E8008D9A71 /* Portugal.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Portugal.mp4; sourceTree = "<group>"; };
+		9CF91DA0246867E8008D9A71 /* Giro dell'Elba in canoa.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Giro dell'Elba in canoa.mp4"; sourceTree = "<group>"; };
+		9CF91DA1246867E8008D9A71 /* Fixed in Florence.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fixed in Florence.mp4"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9C18AE3D2465C09E006F1F3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C9BE4E62469B529004953AD /* MapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C18AE532465C0A0006F1F3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C18AE5E2465C0A0006F1F3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9C0F72072465F23C00245330 /* Videos */ = {
+			isa = PBXGroup;
+			children = (
+				9CF91D90246867E7008D9A71 /* Abetone.mp4 */,
+				9CF91D8D246867E7008D9A71 /* Croazia.mp4 */,
+				9CF91D9B246867E8008D9A71 /* Dreaming in London.mp4 */,
+				9CF91DA1246867E8008D9A71 /* Fixed in Florence.mp4 */,
+				9CF91DA0246867E8008D9A71 /* Giro dell'Elba in canoa.mp4 */,
+				9CF91D9D246867E8008D9A71 /* Ios.mp4 */,
+				9CF91D92246867E7008D9A71 /* Kos.mp4 */,
+				9CF91D9E246867E8008D9A71 /* La Thuile.mp4 */,
+				9CF91D98246867E8008D9A71 /* Le Hammelle.mp4 */,
+				9CF91D96246867E8008D9A71 /* Livigno.mp4 */,
+				9CF91D9C246867E8008D9A71 /* Longboard.mp4 */,
+				9C1304FA246AEDA600017FF9 /* Palm Beach.mp4 */,
+				9CF91D9F246867E8008D9A71 /* Portugal.mp4 */,
+				9CF91D8E246867E7008D9A71 /* PowDay.mp4 */,
+				9CF91D8F246867E7008D9A71 /* Prematuri.mp4 */,
+				9CF91D8B246867E7008D9A71 /* Rainbow Mountains.mp4 */,
+				9CF91D91246867E7008D9A71 /* San Martino.mp4 */,
+				9CF91D8C246867E7008D9A71 /* Sestriere.mp4 */,
+				9CF91D99246867E8008D9A71 /* Sorshossegor.mp4 */,
+				9CF91D9A246867E8008D9A71 /* Stubai.mp4 */,
+				9CF91D97246867E8008D9A71 /* Tenerife.mp4 */,
+				9CF91D93246867E7008D9A71 /* TOURscany.mp4 */,
+				9CF91D94246867E8008D9A71 /* Venezia.mp4 */,
+				9CF91D95246867E8008D9A71 /* Water Flow.mp4 */,
+			);
+			path = Videos;
+			sourceTree = "<group>";
+		};
+		9C189E1F24754D1F003BE528 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				9C9BE4E72469BCA9004953AD /* AppUtility.swift */,
+				9CEE614124741E1B00C78E40 /* SearchingError.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		9C18AE372465C09E006F1F3A = {
+			isa = PBXGroup;
+			children = (
+				9C18AE422465C09F006F1F3A /* VideoMap */,
+				9C18AE592465C0A0006F1F3A /* VideoMapTests */,
+				9C18AE642465C0A0006F1F3A /* VideoMapUITests */,
+				9C18AE412465C09F006F1F3A /* Products */,
+				9C9BE4E42469B529004953AD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9C18AE412465C09F006F1F3A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9C18AE402465C09F006F1F3A /* VideoMap.app */,
+				9C18AE562465C0A0006F1F3A /* VideoMapTests.xctest */,
+				9C18AE612465C0A0006F1F3A /* VideoMapUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9C18AE422465C09F006F1F3A /* VideoMap */ = {
+			isa = PBXGroup;
+			children = (
+				9C18AE432465C09F006F1F3A /* AppDelegate.swift */,
+				9C18AE452465C09F006F1F3A /* SceneDelegate.swift */,
+				9C189E1F24754D1F003BE528 /* Utility */,
+				9C8891F02472D7D200C43076 /* Extensions */,
+				9C18AE792465D9DC006F1F3A /* Model */,
+				9C18AE7A2465D9EA006F1F3A /* View */,
+				9C18AE782465D9CF006F1F3A /* Controller */,
+				9C0F72072465F23C00245330 /* Videos */,
+				9C18AE4C2465C0A0006F1F3A /* Assets.xcassets */,
+				9C18AE4E2465C0A0006F1F3A /* LaunchScreen.storyboard */,
+				9C18AE512465C0A0006F1F3A /* Info.plist */,
+			);
+			path = VideoMap;
+			sourceTree = "<group>";
+		};
+		9C18AE592465C0A0006F1F3A /* VideoMapTests */ = {
+			isa = PBXGroup;
+			children = (
+				9C189E1D2475487F003BE528 /* AnnotationTests.swift */,
+				9C189E1B24754278003BE528 /* VideoTests.swift */,
+				9C11236E2471963300B49DDC /* SearchVideoTests.swift */,
+				9C1304F8246AE91B00017FF9 /* SortVideosTests.swift */,
+				9C18AE5C2465C0A0006F1F3A /* Info.plist */,
+			);
+			path = VideoMapTests;
+			sourceTree = "<group>";
+		};
+		9C18AE642465C0A0006F1F3A /* VideoMapUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9C18AE652465C0A0006F1F3A /* VideoMapUITests.swift */,
+				9C18AE672465C0A0006F1F3A /* Info.plist */,
+			);
+			path = VideoMapUITests;
+			sourceTree = "<group>";
+		};
+		9C18AE782465D9CF006F1F3A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9C18AE472465C09F006F1F3A /* ViewController.swift */,
+				9C18AE752465C97E006F1F3A /* TableViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9C18AE792465D9DC006F1F3A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9CE864AC2470203200BD2A48 /* Annotation.swift */,
+				9C18AE732465C0CE006F1F3A /* Video.swift */,
+				9C11236C2471959F00B49DDC /* SearchVideo.swift */,
+				9C1304F6246AE5EE00017FF9 /* SortVideos.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9C18AE7A2465D9EA006F1F3A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9CE864AE24702AB300BD2A48 /* AnnotationView.swift */,
+				9C18AE7B2465DA0C006F1F3A /* TableViewCellDesign.swift */,
+				9C18AE492465C09F006F1F3A /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9C8891F02472D7D200C43076 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9C39A3C92472ABB200403DF1 /* BlurMapViewExtension.swift */,
+				9C39A3CB2472B59900403DF1 /* BlurTableViewExtension.swift */,
+				9C39A3C72472AB8800403DF1 /* ShakeTextFieldExtension.swift */,
+				9C941274247B28FA00618037 /* AVPlayerViewControllerExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9C9BE4E42469B529004953AD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9C9BE4E52469B529004953AD /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9C18AE3F2465C09E006F1F3A /* VideoMap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C18AE6A2465C0A0006F1F3A /* Build configuration list for PBXNativeTarget "VideoMap" */;
+			buildPhases = (
+				9C18AE3C2465C09E006F1F3A /* Sources */,
+				9C18AE3D2465C09E006F1F3A /* Frameworks */,
+				9C18AE3E2465C09E006F1F3A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VideoMap;
+			productName = VideoMap;
+			productReference = 9C18AE402465C09F006F1F3A /* VideoMap.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9C18AE552465C0A0006F1F3A /* VideoMapTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C18AE6D2465C0A0006F1F3A /* Build configuration list for PBXNativeTarget "VideoMapTests" */;
+			buildPhases = (
+				9C18AE522465C0A0006F1F3A /* Sources */,
+				9C18AE532465C0A0006F1F3A /* Frameworks */,
+				9C18AE542465C0A0006F1F3A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9C18AE582465C0A0006F1F3A /* PBXTargetDependency */,
+			);
+			name = VideoMapTests;
+			productName = VideoMapTests;
+			productReference = 9C18AE562465C0A0006F1F3A /* VideoMapTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9C18AE602465C0A0006F1F3A /* VideoMapUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C18AE702465C0A0006F1F3A /* Build configuration list for PBXNativeTarget "VideoMapUITests" */;
+			buildPhases = (
+				9C18AE5D2465C0A0006F1F3A /* Sources */,
+				9C18AE5E2465C0A0006F1F3A /* Frameworks */,
+				9C18AE5F2465C0A0006F1F3A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9C18AE632465C0A0006F1F3A /* PBXTargetDependency */,
+			);
+			name = VideoMapUITests;
+			productName = VideoMapUITests;
+			productReference = 9C18AE612465C0A0006F1F3A /* VideoMapUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9C18AE382465C09E006F1F3A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = Jak;
+				TargetAttributes = {
+					9C18AE3F2465C09E006F1F3A = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+					9C18AE552465C0A0006F1F3A = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = 9C18AE3F2465C09E006F1F3A;
+					};
+					9C18AE602465C0A0006F1F3A = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = 9C18AE3F2465C09E006F1F3A;
+					};
+				};
+			};
+			buildConfigurationList = 9C18AE3B2465C09E006F1F3A /* Build configuration list for PBXProject "VideoMap" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9C18AE372465C09E006F1F3A;
+			productRefGroup = 9C18AE412465C09F006F1F3A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9C18AE3F2465C09E006F1F3A /* VideoMap */,
+				9C18AE552465C0A0006F1F3A /* VideoMapTests */,
+				9C18AE602465C0A0006F1F3A /* VideoMapUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9C18AE3E2465C09E006F1F3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CF91DA2246867E8008D9A71 /* Rainbow Mountains.mp4 in Resources */,
+				9CF91DB2246867E8008D9A71 /* Dreaming in London.mp4 in Resources */,
+				9CF91DA9246867E8008D9A71 /* Kos.mp4 in Resources */,
+				9CF91DB4246867E8008D9A71 /* Ios.mp4 in Resources */,
+				9CF91DB7246867E8008D9A71 /* Giro dell'Elba in canoa.mp4 in Resources */,
+				9CF91DAB246867E8008D9A71 /* Venezia.mp4 in Resources */,
+				9CF91DA4246867E8008D9A71 /* Croazia.mp4 in Resources */,
+				9CF91DB0246867E8008D9A71 /* Sorshossegor.mp4 in Resources */,
+				9C18AE502465C0A0006F1F3A /* LaunchScreen.storyboard in Resources */,
+				9CF91DAA246867E8008D9A71 /* TOURscany.mp4 in Resources */,
+				9CF91DB6246867E8008D9A71 /* Portugal.mp4 in Resources */,
+				9C18AE4D2465C0A0006F1F3A /* Assets.xcassets in Resources */,
+				9CF91DA5246867E8008D9A71 /* PowDay.mp4 in Resources */,
+				9CF91DB8246867E8008D9A71 /* Fixed in Florence.mp4 in Resources */,
+				9CF91DAC246867E8008D9A71 /* Water Flow.mp4 in Resources */,
+				9CF91DA6246867E8008D9A71 /* Prematuri.mp4 in Resources */,
+				9CF91DB5246867E8008D9A71 /* La Thuile.mp4 in Resources */,
+				9CF91DAD246867E8008D9A71 /* Livigno.mp4 in Resources */,
+				9CF91DA8246867E8008D9A71 /* San Martino.mp4 in Resources */,
+				9CF91DA3246867E8008D9A71 /* Sestriere.mp4 in Resources */,
+				9CF91DB1246867E8008D9A71 /* Stubai.mp4 in Resources */,
+				9C1304FB246AEDA600017FF9 /* Palm Beach.mp4 in Resources */,
+				9CF91DAE246867E8008D9A71 /* Tenerife.mp4 in Resources */,
+				9CF91DB3246867E8008D9A71 /* Longboard.mp4 in Resources */,
+				9CF91DAF246867E8008D9A71 /* Le Hammelle.mp4 in Resources */,
+				9CF91DA7246867E8008D9A71 /* Abetone.mp4 in Resources */,
+				9C18AE4B2465C09F006F1F3A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C18AE542465C0A0006F1F3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C18AE5F2465C0A0006F1F3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9C18AE3C2465C09E006F1F3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C941275247B28FA00618037 /* AVPlayerViewControllerExtension.swift in Sources */,
+				9CEE614224741E1B00C78E40 /* SearchingError.swift in Sources */,
+				9C9BE4E82469BCA9004953AD /* AppUtility.swift in Sources */,
+				9C18AE482465C09F006F1F3A /* ViewController.swift in Sources */,
+				9C18AE7C2465DA0C006F1F3A /* TableViewCellDesign.swift in Sources */,
+				9C18AE742465C0CE006F1F3A /* Video.swift in Sources */,
+				9C18AE442465C09F006F1F3A /* AppDelegate.swift in Sources */,
+				9C11236D2471959F00B49DDC /* SearchVideo.swift in Sources */,
+				9C39A3C82472AB8800403DF1 /* ShakeTextFieldExtension.swift in Sources */,
+				9C1304F7246AE5EE00017FF9 /* SortVideos.swift in Sources */,
+				9C18AE762465C97E006F1F3A /* TableViewController.swift in Sources */,
+				9CE864AF24702AB300BD2A48 /* AnnotationView.swift in Sources */,
+				9CE864AD2470203200BD2A48 /* Annotation.swift in Sources */,
+				9C39A3CA2472ABB200403DF1 /* BlurMapViewExtension.swift in Sources */,
+				9C39A3CC2472B59900403DF1 /* BlurTableViewExtension.swift in Sources */,
+				9C18AE462465C09F006F1F3A /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C18AE522465C0A0006F1F3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C189E1E2475487F003BE528 /* AnnotationTests.swift in Sources */,
+				9C189E1C24754278003BE528 /* VideoTests.swift in Sources */,
+				9C1304F9246AE91B00017FF9 /* SortVideosTests.swift in Sources */,
+				9C11236F2471963300B49DDC /* SearchVideoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C18AE5D2465C0A0006F1F3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C18AE662465C0A0006F1F3A /* VideoMapUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9C18AE582465C0A0006F1F3A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9C18AE3F2465C09E006F1F3A /* VideoMap */;
+			targetProxy = 9C18AE572465C0A0006F1F3A /* PBXContainerItemProxy */;
+		};
+		9C18AE632465C0A0006F1F3A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9C18AE3F2465C09E006F1F3A /* VideoMap */;
+			targetProxy = 9C18AE622465C0A0006F1F3A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9C18AE492465C09F006F1F3A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9C18AE4A2465C09F006F1F3A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9C18AE4E2465C0A0006F1F3A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9C18AE4F2465C0A0006F1F3A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9C18AE682465C0A0006F1F3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9C18AE692465C0A0006F1F3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9C18AE6B2465C0A0006F1F3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FRV9WDLHPD;
+				INFOPLIST_FILE = VideoMap/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jak.VideoMap;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9C18AE6C2465C0A0006F1F3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FRV9WDLHPD;
+				INFOPLIST_FILE = VideoMap/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jak.VideoMap;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9C18AE6E2465C0A0006F1F3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FRV9WDLHPD;
+				INFOPLIST_FILE = VideoMapTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jak.VideoMapTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VideoMap.app/VideoMap";
+			};
+			name = Debug;
+		};
+		9C18AE6F2465C0A0006F1F3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FRV9WDLHPD;
+				INFOPLIST_FILE = VideoMapTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jak.VideoMapTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VideoMap.app/VideoMap";
+			};
+			name = Release;
+		};
+		9C18AE712465C0A0006F1F3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FRV9WDLHPD;
+				INFOPLIST_FILE = VideoMapUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jak.VideoMapUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VideoMap;
+			};
+			name = Debug;
+		};
+		9C18AE722465C0A0006F1F3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FRV9WDLHPD;
+				INFOPLIST_FILE = VideoMapUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jak.VideoMapUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VideoMap;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9C18AE3B2465C09E006F1F3A /* Build configuration list for PBXProject "VideoMap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C18AE682465C0A0006F1F3A /* Debug */,
+				9C18AE692465C0A0006F1F3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9C18AE6A2465C0A0006F1F3A /* Build configuration list for PBXNativeTarget "VideoMap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C18AE6B2465C0A0006F1F3A /* Debug */,
+				9C18AE6C2465C0A0006F1F3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9C18AE6D2465C0A0006F1F3A /* Build configuration list for PBXNativeTarget "VideoMapTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C18AE6E2465C0A0006F1F3A /* Debug */,
+				9C18AE6F2465C0A0006F1F3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9C18AE702465C0A0006F1F3A /* Build configuration list for PBXNativeTarget "VideoMapUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C18AE712465C0A0006F1F3A /* Debug */,
+				9C18AE722465C0A0006F1F3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9C18AE382465C09E006F1F3A /* Project object */;
+}
