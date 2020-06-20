@@ -39,16 +39,6 @@
                ReferencedContainer = "container:VideoMap.xcodeproj">
             </BuildableReference>
          </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9C18AE602465C0A0006F1F3A"
-               BuildableName = "VideoMapUITests.xctest"
-               BlueprintName = "VideoMapUITests"
-               ReferencedContainer = "container:VideoMap.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
